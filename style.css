@@ -1,0 +1,117 @@
+html .block .box{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: ghostwhite;
+  color: gray;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.container {
+  margin: 50px auto;
+  border-radius: 5px;
+  text-align: center; 
+}
+
+.box {
+  display: inline-block;
+  outline: 1px solid gray;
+  width: 100px;
+  height: 100px;
+
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+
+  cursor: pointer;
+  border-radius: 20%;
+}
+
+.box:hover {
+  background-color: rgb(206, 206, 206);
+  transition: 0.3s;
+}
+
+span {
+  position: absolute;
+
+  font-family: sans-serif;
+  font-size: 75px;
+  text-align: center;
+
+  height: 100px;
+  width: 100px;
+
+  padding: 0;
+  margin-left: -50px;
+}
+
+.top {
+  border-top: none;
+}
+
+.bottom {
+  border-bottom: none;
+}
+
+.left {
+  border-left: none;
+}
+
+.right {
+  border-right: none;
+}
+
+.alert {
+  height: 150px;
+  width: 250px;
+  display: inline-block;
+  background: ghostwhite;
+  position: relative;
+  z-index: 10;
+  margin-top: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 75px 2px dimgray;
+  animation: larger 0,5s;
+  animation-fill-mode: forwards;
+  box-sizing: content-box;
+  padding: 30px;
+  bottom: 50px;
+  top: 0;
+}
+
+button {
+  background: dimgray;
+  border-radius: 10px;
+  color: ghostwhite;
+  border: none;
+  outline: none;
+  padding: 3px 6px 1px;
+}
+
+button:focus {
+  background: silver;
+}
+
+.activeBox {
+  background: silver;
+}
+
+@keyframes larger {
+  from {
+    height: 100px;
+    width: 250px;
+  }
+
+  to {
+    height: 150px;
+    width: 500px;
+  }
+}
